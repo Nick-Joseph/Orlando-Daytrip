@@ -1,23 +1,25 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:orlando_daytrip/src/localizations/string_hardcoded.dart';
 import 'package:orlando_daytrip/src/routing/app_router.dart';
 
-class MyApp extends StatelessWidget {
+class MyApp extends ConsumerWidget {
   const MyApp({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
+    final goRouter = ref.watch(goRouterProvider);
     return MaterialApp.router(
       routerConfig: goRouter,
       debugShowCheckedModeBanner: false,
       restorationScopeId: 'app',
-      onGenerateTitle: (BuildContext context) => 'My Shop'.hardcoded,
       theme: ThemeData(
         // * Use this to toggle Material 3 (defaults to true since Flutter 3.16)
         useMaterial3: true,
         primarySwatch: Colors.grey,
+        scaffoldBackgroundColor: Colors.white,
         appBarTheme: const AppBarTheme(
-          backgroundColor: Colors.black87,
+          backgroundColor: Colors.white,
           foregroundColor: Colors.white,
           elevation: 0,
         ),
