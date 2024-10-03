@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-import 'package:orlando_daytrip/src/features/boomarkspage/bookmarksPage.dart';
+import 'package:orlando_daytrip/src/features/boomarks_page/bookmarks_page.dart';
 import 'package:orlando_daytrip/src/features/curatePage/curatepage.dart';
 import 'package:orlando_daytrip/src/features/discoverPage/discover_page.dart';
-import 'package:orlando_daytrip/src/features/followingPage/following_page.dart';
-import 'package:orlando_daytrip/src/features/homepage/presentation/lists/homepage_list_page.dart';
-import 'package:orlando_daytrip/src/features/mappage/map_page.dart';
-import 'package:orlando_daytrip/src/features/profilepage/profilePage.dart';
+import 'package:orlando_daytrip/src/features/following_page/following_page.dart';
+import 'package:orlando_daytrip/src/features/home_page/presentation/lists/homepage_list_page.dart';
+import 'package:orlando_daytrip/src/features/map_page/map_page.dart';
+import 'package:orlando_daytrip/src/features/profile_page/profilePage.dart';
 import 'package:orlando_daytrip/src/routing/not_found_screen.dart';
 
 enum AppRoute {

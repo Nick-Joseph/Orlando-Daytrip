@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:orlando_daytrip/src/features/homepage/presentation/home_app_bar/notifications_button.dart';
+import 'package:orlando_daytrip/src/features/home_page/presentation/home_app_bar/notifications_button.dart';
 
 class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
   const HomeAppBar({
